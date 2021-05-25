@@ -1,6 +1,20 @@
+import Layout from '../components/layout/Layout'
+
 const Home = () =>{
     return(
-        <h1>Hola Home</h1>
+        <div className="home">
+            <Layout>
+                <h1>Hola Home</h1>
+
+            </Layout>
+
+
+            <style jsx>
+            {`
+                
+            `}
+            </style>
+        </div>
     )
 }
 
