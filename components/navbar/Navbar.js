@@ -1,33 +1,96 @@
+import {Component} from 'react'
 import MenuSidebar from "../menu/MenuSidebar"
+import MenuHamburguer from "../menu/MenuHamburguer"
+import MenuOpenHamburguer from '../menu/MenuOpenHamburguer'
 
-const Navbar = () =>{
-    return(
-        <div className="menu">
-            <div className="imagen">
-                <img src="data:image/png;base64,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"></img>
-            </div>
-            <div className="sidebar">
-                <MenuSidebar/>
-            </div>
 
-            <style jsx>
-                {`
-                    .menu{
-                        height:100vh;
-                        background-color: #006599;
-                        display:grid;
-                        grid-template-rows: minmax(180px, 300px) minmax(180px, 1fr)
+class Navbar extends Component{
+    state ={
+        menuVisible: true
+    }
+
+    handleCloseMenu = (e) =>{
+        this.setState({
+            menuVisible:false
+        })
+    }
+
+    handleOpenMenu = (e) =>{
+        this.setState({
+            menuVisible:true
+        })
+    }
+    render(){
+
+    
+        return(
+            <div className="menu">
+                <div className="menu-hamburguer">
+                   {
+                        this.state.menuVisible ?
+                            <MenuHamburguer handleClick={this.handleCloseMenu}/> :
+                            <MenuOpenHamburguer handleClick={this.handleOpenMenu}/>
                     }
-                    .imagen{
-                        margin:auto;
-                    }
-                    img{
-                        width:100px;
-                    }
-                `}
-            </style>
-        </div>
-    )
+                    
+                </div>
+                <div className="imagen">
+                    <img src="https://image.flaticon.com/icons/png/512/1490/1490773.png"></img>
+                </div>
+                <div className="sidebar">
+                    <MenuSidebar/>
+                </div>
+                        
+
+                <style jsx>
+                    {`
+                        .menu{
+                            width:100%;
+                            display:grid;
+                            grid-template-columns:1fr;
+                            grid-template-rows: minmax(100px, 30%) 70%;
+                        }
+                        .imagen{
+                            margin:auto;
+                        }
+                        img{
+                            width:100px;
+                            transition:0.7s;
+                        }
+                        img:hover{
+                            width:130px;
+                            transition:0.7s;
+                        }
+                        .menu-hamburguer{
+                            display:none;
+                        }
+
+                        @media (max-width: 700px) {
+                            img{
+                                width:80px;
+                                transition:0.7s;
+                            }
+                            .sidebar{
+                                display:none;      
+                            }
+                            .menu{
+                                display:flex;
+                                align-items: center;
+                                align-content: center;
+                                justify-content: space-between;
+                                padding:20px;
+                            }
+                            .menu-hamburguer{
+                                display:block;
+                            }
+                            .imagen{
+                                margin:0;
+                            }
+                        }
+                    `}
+                </style>
+            </div>
+        )
+    }
 }
 
 export default Navbar

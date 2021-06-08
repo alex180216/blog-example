@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const MenuSidebar = ()=>{
     return(
-        <menu>
+        <nav className="nav-menu">
             <Link href="/">
                 <a>Inicio</a>
             </Link>
@@ -21,22 +21,32 @@ const MenuSidebar = ()=>{
 
             <style jsx>
                 {`
-                    menu{
-                        margin:0;
-                        padding:0;
-                        display:grid;
-                        grid-template-columns: minmax(180px, auto);
-                        /* grid-template-rows:repeat(auto-fit, minmax(100px, auto)); */
-                        align-items:stretch;
-                    }
-                    a{
-                        margin:auto;
-                        font-size: 3vh;
-                        padding:3vh;
-                    }
+                   .nav-menu{
+                        height:100%;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                        align-content: stretch;
+                        justify-content: space-evenly;
+                        align-items: stretch;                    
+                   }
+                   
+                   a{
+                       color:white;
+                       text-decoration: none;
+                       text-align:center;
+                       font-size:1.4rem;
+                       transition:0.2s;
+                   }
+                   a:hover{
+                       color: #572364;
+                       transition:0.2s;
+                   }
+                
                 `}
             </style>
-        </menu>
+        </nav>
     )
 }
 
