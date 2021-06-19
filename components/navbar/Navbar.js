@@ -79,7 +79,7 @@ class Navbar extends Component{
 
                         @media (max-width: 700px) {
                             img{
-                                width:100px;
+                                width:60px;
                                 transition:0.7s;
                             }
                             .sidebar{
