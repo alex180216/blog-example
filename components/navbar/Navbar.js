@@ -1,13 +1,23 @@
 import {Component} from 'react'
-import MenuSidebar from "../menu/MenuSidebar"
-import MenuHamburguer from "../menu/MenuHamburguer"
+import { CSSTransitionGroup } from 'react-transition-group'
+import MenuSidebar from '../menu/MenuSidebar'
+import MenuHamburguer from'../menu/MenuHamburguer'
 import MenuOpenHamburguer from '../menu/MenuOpenHamburguer'
 
 
 class Navbar extends Component{
     state ={
-        menuVisible: true
+        menuVisible: false
     }
+    styleMenuVisible={
+        left:'0',
+        transition:'1s'
+    }
+    styleMenuHide={
+        left:'999999px',
+        transition:'1s'
+    }
+    
 
     handleCloseMenu = (e) =>{
         this.setState({
@@ -21,15 +31,16 @@ class Navbar extends Component{
         })
     }
     render(){
-
-    
         return(
             <div className="menu">
                 <div className="menu-hamburguer">
+                    <MenuOpenHamburguer 
+                        handleClick={this.handleOpenMenu}/>
                    {
-                        this.state.menuVisible ?
-                            <MenuHamburguer handleClick={this.handleCloseMenu}/> :
-                            <MenuOpenHamburguer handleClick={this.handleOpenMenu}/>
+                        this.state.menuVisible && 
+                            <MenuHamburguer 
+                                className =""
+                                handleClick={this.handleCloseMenu}/> 
                     }
                     
                 </div>
@@ -85,6 +96,7 @@ class Navbar extends Component{
                             .imagen{
                                 margin:0;
                             }
+                            
                         }
                     `}
                 </style>

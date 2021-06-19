@@ -34,8 +34,8 @@ const MenuHamburguer =(props) =>{
                     background-color: rgb(95 28 219);
                     position: fixed;
                     top: 0;
-                    left: 0;
                     right: 30%;
+                    left:0;
                     bottom: 0;
                     display: flex;
                     flex-direction: column;
