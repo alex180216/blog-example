@@ -9,14 +9,6 @@ class Navbar extends Component{
     state ={
         menuVisible: false
     }
-    styleMenuVisible={
-        left:'0',
-        transition:'1s'
-    }
-    styleMenuHide={
-        left:'999999px',
-        transition:'1s'
-    }
     
 
     handleCloseMenu = (e) =>{

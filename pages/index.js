@@ -1,12 +1,16 @@
+import { Component } from 'react'
 import Layout from '../components/layout/Layout'
 import Slider from '../components/Slider'
 
-const Home = () =>{
-    return(
-        <Layout>
-            <Slider/>
-        </Layout>
-    )
+class Home extends Component{
+    
+    render(){
+        return(
+            <Layout>
+                <Slider/>
+            </Layout>
+        )
+    }
 }
 
 export default Home

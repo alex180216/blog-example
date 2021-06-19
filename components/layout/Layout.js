@@ -11,7 +11,7 @@ const Layout = ({children}) =>{
                 <link rel="icon" type="image/png" href="https://image.flaticon.com/icons/png/512/1490/1490773.png" />
             </Head>
             <header>
-                <Navbar />
+                <Navbar/>
             </header>
             <main>
             {

@@ -47,6 +47,7 @@ const MenuHamburguer =(props) =>{
                 .nav-menu a{
                     color:white;
                     text-decoration: none;
+                    font-size:1.8em;
                 }
                 .close-icon{
                     position: absolute;
