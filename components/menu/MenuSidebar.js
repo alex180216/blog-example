@@ -31,17 +31,25 @@ const MenuSidebar = ()=>{
                         justify-content: space-evenly;
                         align-items: stretch;                    
                    }
-                   
                    a{
-                       color:white;
-                       text-decoration: none;
-                       text-align:center;
-                       font-size:1.4rem;
-                       transition:0.2s;
-                   }
+                    color:white;
+                    text-decoration: none;
+                    text-align:center;
+                    font-size:2.3em;
+                    transition:0.2s;
+                    }
                    a:hover{
                        color: #572364;
                        transition:0.2s;
+                    }
+                    @media (max-width: 1500px) {
+                        a{
+                            color:white;
+                            text-decoration: none;
+                            text-align:center;
+                            font-size:1.3em;
+                            transition:0.2s;
+                        }
                    }
                 
                 `}

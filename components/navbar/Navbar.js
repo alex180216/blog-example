@@ -59,16 +59,18 @@ class Navbar extends Component{
                             display:grid;
                             grid-template-columns:1fr;
                             grid-template-rows: minmax(100px, 30%) 70%;
+                            padding-top:10%;
                         }
                         .imagen{
+                            text-align:center;
                             margin:auto;
                         }
                         img{
-                            width:100px;
+                            width:40%;
                             transition:0.7s;
                         }
                         img:hover{
-                            width:130px;
+                            width:80px;
                             transition:0.7s;
                         }
                         .menu-hamburguer{
@@ -77,7 +79,7 @@ class Navbar extends Component{
 
                         @media (max-width: 700px) {
                             img{
-                                width:80px;
+                                width:100px;
                                 transition:0.7s;
                             }
                             .sidebar{

@@ -1,9 +1,10 @@
 import Layout from '../components/layout/Layout'
+import Slider from '../components/Slider'
 
 const Home = () =>{
     return(
         <Layout>
-            <h1>Hola vengo desde el home</h1>
+            <Slider/>
         </Layout>
     )
 }
