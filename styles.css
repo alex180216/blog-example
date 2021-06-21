@@ -89,6 +89,25 @@ footer{
     color: var(--parrafo-color);
 }
 
+/*==============================*/
+/*=====ABOUT SECTION============*/
+/*==============================*/
+.about-section{
+    padding: 2em;
+    font-family: var(--parrafo-font-family);
+}
+.about-section h3{
+    color: var(--titulo-color);
+    font-size: var(--titulo-size);
+}
+.about-section .info{
+    color: var(--parrafo-color);
+    font-size: var(--parrafo-size);
+    font-weight: var(--parrafo-weight);
+    text-align: justify;
+}
+
+
 @media (max-width: 700px) {
     .global-body{
         width: 100%;
@@ -98,7 +117,7 @@ footer{
                             "header"
                             "main" 
                             "footer";
-        grid-template-rows: 15% 75% 10%;
+        grid-template-rows: repeat(3, auto);
         grid-template-columns: 100%;
     }
     header{
