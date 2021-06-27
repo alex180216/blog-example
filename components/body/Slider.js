@@ -1,4 +1,4 @@
-import { noCopy } from "../utils/noCopyUtils"
+import { noCopy } from "../../utils/noCopyUtils"
 
 const Slider = () =>{
     return(

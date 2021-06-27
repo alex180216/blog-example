@@ -69,7 +69,12 @@ footer{
     max-height: 600px;
     background-position: center;
 }
-
+/*==============================*/
+/*=====CARROUSEL SLIDER=========*/
+/*==============================*/
+.carousel-item > img{
+    height: 25em;
+}
 /*==============================*/
 /*=====WELCOME DESCRIPTION======*/
 /*==============================*/

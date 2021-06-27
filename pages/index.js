@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import Layout from '../components/layout/Layout'
-import Slider from '../components/Slider'
+import Slider from '../components/body/Slider'
 import Description from '../components/body/Description'
 import AboutUs from '../components/body/AboutUs'
 class Home extends Component{

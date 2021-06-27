@@ -1,5 +1,4 @@
 import {Component} from 'react'
-import { CSSTransitionGroup } from 'react-transition-group'
 import MenuSidebar from '../menu/MenuSidebar'
 import MenuHamburguer from'../menu/MenuHamburguer'
 import MenuOpenHamburguer from '../menu/MenuOpenHamburguer'

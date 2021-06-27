@@ -24,8 +24,10 @@
   },
   "homepage": "https://github.com/alex180216/blog-example#readme",
   "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
     "next": "^10.2.3",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "reactstrap": "^8.9.0"
   }
 }
