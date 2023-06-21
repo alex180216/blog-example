@@ -29,7 +29,7 @@ const AboutUs = () =>{
     return(
         <section className="about-section">
             <div className="first-container">
-                <h3>About Us</h3>
+                <h3>Acerca de Nosotros</h3>
                 <div className="info parrafo">
                     <p>
                         Sed turpis nunc, laoreet sit amet fermentum sed, euismod ac justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
